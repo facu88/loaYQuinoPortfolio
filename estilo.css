@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+@font-face {
+  font-family: 'Bo';
+  src: url(fuentes/Bogart-Bold-Italic-trial.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fcdecf;
+}
+
+header {}
+
+.contactosHeader {
+  background: #f0cbb9;
+  border-radius: 22px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+.contactosHeader a {
+  color: rgba(165, 135, 38, 255);
+  text-decoration: none;
+  height: 50px;
+  font-size: 20px;
+  padding: 2px 12px 5px 2px
+}
+
+.contactosHeader a:hover {
+  color: rgb(15, 55, 16);
+}
+
+.titulo h1 {
+  margin: 0px;
+  font-family: 'Bo';
+  font-size: 100px;
+  font-weight: lighter;
+  background: #f0cbb9;
+  color: #f0cbb9;
+  /* text-shadow: 2px -2px 0 rgb(239, 88, 16), 0px 2px 0 rgb(151, 168, 150), -2px 0px 0 rgb(151, 168, 150); */
+  text-shadow: -1px 1px 0 rgb(239, 88, 16), 1px -1px 0 rgb(239, 88, 16), -1px -1px 0 rgb(15, 55, 16), 4px 4px 0 rgb(15, 55, 16);
+  text-align: center;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0% {
+    text-shadow: -1px 1px 0 rgb(239, 88, 16), 1px -1px 0 rgb(239, 88, 16), -1px -1px 0 rgb(15, 55, 16), 4px 4px 0 rgb(15, 55, 16);
+  }
+
+   25%{
+  text-shadow: -1px 1px 0 rgb(239, 88, 16) , 1px -1px 0  rgb(15, 55, 16), -1px -1px 0 rgb(239, 88, 16) , 4px 4px 0 rgb(15, 55, 16);
+
+    }
+  50% {
+    text-shadow: -1px 1px 0 rgb(15, 55, 16), 1px -1px 0 rgb(239, 88, 16), -1px -1px 0 rgb(15, 55, 16), 4px 4px 0 rgb(239, 88, 16);
+  }
+
+  100% {
+    text-shadow: -1px 1px 0 rgb(239, 88, 16), 1px -1px 0 rgb(239, 88, 16), -1px -1px 0 rgb(15, 55, 16), 4px 4px 0 rgb(15, 55, 16);
+  }
+
+}
+
+.navBar {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  background-color: #f0cbb9;
+  ;
+  padding: 10px;
+  justify-content: center;
+  grid-gap: 50px;
+  border-radius: 0px 0px 70px 70px
+}
+
+.navBar a {
+  color: rgba(165, 135, 38, 255);
+  justify-content: space-around;
+  background: #f0cbb9;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 2px solid rgb(239, 88, 16);
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em rgba(165, 135, 38, 255);
+  text-decoration: none;
+}
+
+.navBar a:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em rgba(165, 135, 38, 255);
+  text-decoration: none;
+}
+
+.navBar a:active {
+  color: rgb(239, 88, 16);
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em black;
+  text-decoration: none;
+}
+
+.cuerpo {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imagen {
+  text-align: center;
+}
+
+.imagen img {
+  margin-top: 6%;
+  max-width: 40%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border: 2px solid rgb(15, 55, 16);
+  box-shadow: 9px 9px 0px 0px rgb(15, 55, 16);
+}
+
+.imagen img:hover {
+  margin-top: 6%;
+  max-width: 40%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border: 2px solid rgb(15, 55, 16);
+  box-shadow: 12px 12px 0px 0px rgb(239, 88, 16);
+  transition-duration: 0.5s;
+}
+
+.pad {
+  padding-right: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: #f0cbb9;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  margin-bottom: 3em;
+  transition-duration: 0.5s;
+}
+
+.card-header {
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(15, 55, 16);
+  text-shadow: rgb(239, 88, 16) 0 -1px;
+  ;
+  padding-bottom: 0px;
+}
+
+.color-2 {
+  box-shadow: 9px 9px 0px 0px rgb(239, 88, 16);
+  border-color: rgb(239, 88, 16);
+}
+
+.color-2:hover {
+  box-shadow: 12px 12px 0px 0px rgb(15, 55, 16);
+}
