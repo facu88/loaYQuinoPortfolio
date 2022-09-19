@@ -10,6 +10,11 @@
   padding: 0;
 }
 
+.row {
+  padding: 0px;
+  margin: 0px;
+}
+
 body {
   background-color: #fcdecf;
 }
@@ -17,8 +22,9 @@ body {
 header {}
 
 .contactosHeader {
+  position: fixed;
   background: #f0cbb9;
-  border-radius: 22px;
+  margin: 0px;
   height: 40px;
   display: flex;
   justify-content: flex-end;
@@ -37,8 +43,16 @@ header {}
   color: rgb(15, 55, 16);
 }
 
+.titulo {}
+
+h1 {
+  margin: 0px
+}
+
 .titulo h1 {
-  margin: 0px;
+  display:
+    margin: 0px;
+  padding-top: 30px;
   font-family: 'Bo';
   font-size: 100px;
   font-weight: lighter;
@@ -55,10 +69,10 @@ header {}
     text-shadow: -1px 1px 0 rgb(239, 88, 16), 1px -1px 0 rgb(239, 88, 16), -1px -1px 0 rgb(15, 55, 16), 4px 4px 0 rgb(15, 55, 16);
   }
 
-   25%{
-  text-shadow: -1px 1px 0 rgb(239, 88, 16) , 1px -1px 0  rgb(15, 55, 16), -1px -1px 0 rgb(239, 88, 16) , 4px 4px 0 rgb(15, 55, 16);
+  25% {
+    text-shadow: -1px 1px 0 rgb(239, 88, 16), 1px -1px 0 rgb(15, 55, 16), -1px -1px 0 rgb(239, 88, 16), 4px 4px 0 rgb(15, 55, 16);
+  }
 
-    }
   50% {
     text-shadow: -1px 1px 0 rgb(15, 55, 16), 1px -1px 0 rgb(239, 88, 16), -1px -1px 0 rgb(15, 55, 16), 4px 4px 0 rgb(239, 88, 16);
   }
@@ -66,19 +80,22 @@ header {}
   100% {
     text-shadow: -1px 1px 0 rgb(239, 88, 16), 1px -1px 0 rgb(239, 88, 16), -1px -1px 0 rgb(15, 55, 16), 4px 4px 0 rgb(15, 55, 16);
   }
+}
 
+.scroll {
+  display: none;
 }
 
 .navBar {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
-  position: relative;
+  /* position: relative; */
   display: flex;
   background-color: #f0cbb9;
-  ;
   padding: 10px;
+  padding-bottom: 3%;
   justify-content: center;
-  grid-gap: 50px;
+  grid-gap: 1%;
   border-radius: 0px 0px 70px 70px
 }
 
@@ -110,10 +127,12 @@ header {}
 }
 
 .cuerpo {
-  position: absolute;
-  display: flex;
+
+  /* display: flex; */
   justify-content: space-around;
   align-items: center;
+  border-bottom: 2px solid rgb(15, 55, 16);
+  padding-bottom: 100px
 }
 
 .imagen {
@@ -122,7 +141,7 @@ header {}
 
 .imagen img {
   margin-top: 6%;
-  max-width: 40%;
+  width: 300px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   border: 2px solid rgb(15, 55, 16);
@@ -130,8 +149,7 @@ header {}
 }
 
 .imagen img:hover {
-  margin-top: 6%;
-  max-width: 40%;
+
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   border: 2px solid rgb(15, 55, 16);
@@ -140,9 +158,13 @@ header {}
 }
 
 .pad {
-  padding-right: 5em;
+  /* position: relative; */
+  padding: 5%;
+  /* padding-right: 5em; */
   display: flex;
   justify-content: center;
+  z-index: -1;
+
 }
 
 .card {
@@ -151,21 +173,115 @@ header {}
   border: 1px solid #000;
   margin-bottom: 3em;
   transition-duration: 0.5s;
+
+    box-shadow: 9px 9px 0px 0px rgb(239, 88, 16);
+    border-color: rgb(239, 88, 16);
+
 }
 
-.card-header {
+/* .card-header {
   font-family: 'Josefin Sans', sans-serif;
   color: rgb(15, 55, 16);
   text-shadow: rgb(239, 88, 16) 0 -1px;
   ;
   padding-bottom: 0px;
+} */
+.card-header{
+  box-shadow: none
 }
 
-.color-2 {
-  box-shadow: 9px 9px 0px 0px rgb(239, 88, 16);
-  border-color: rgb(239, 88, 16);
-}
-
-.color-2:hover {
+.color-2 :hover {
   box-shadow: 12px 12px 0px 0px rgb(15, 55, 16);
+}
+.bio  {
+  background-image: url(img/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+.LoaBio {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding-bottom: 100px;
+}
+
+.LoaImg img {
+  margin-top: 5%;
+  width: 500px;
+  border-radius:5% 100% 100% 10% / 11% 51% 65% 11%  ;
+/* border-radius: 5% 100% 100% 10% / 11% 100% 29% 11%  ; */
+  box-shadow: 9px 9px 0px 0px rgb(15, 55, 16);
+  border: 3px solid rgb(239, 88, 16);
+  transition-duration: 0.8s;
+}
+
+.LoaImg img:hover {
+  border: 6px solid rgb(15, 55, 16);
+  box-shadow: 12px 12px 0px 0px rgb(239, 88, 16);
+}
+
+.LoaText{
+padding: 2%
+}
+.LoaText h3{
+  font-family: 'Bo';
+  text-align:justify;
+  font-size: 60px;
+  -webkit-text-stroke: 2px rgb(239, 88, 16);
+  color: transparent;
+
+}
+.LoaText p{
+  text-align: justify;
+  font-size:25px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(15, 55, 16);
+  text-shadow: rgb(239, 88, 16) 0 -0.5px;
+}
+
+.quinoBio {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 2px solid rgb(15, 55, 16);
+  padding-bottom: 100px;
+}
+
+.quinoImg img {
+
+  margin-top: 5%;
+  width: 500px;
+  border-radius:86% 9% 8% 100% / 68% 12% 22% 49%   ;
+
+  box-shadow: 9px 9px 0px 0px rgb(15, 55, 16);
+  border: 3px solid rgb(239, 88, 16);
+  transition-duration: 0.8s;
+}
+
+.quinoImg img:hover {
+  border: 6px solid rgb(15, 55, 16);
+  box-shadow: 12px 12px 0px 0px rgb(239, 88, 16);
+}
+
+.quinoText{
+padding: 2%;
+}
+.quinoText h3{
+  font-family: 'Bo';
+  text-align: justify;
+  font-size: 60px;
+  -webkit-text-stroke: 2px rgb(239, 88, 16);
+  color: transparent;
+
+}
+.quinoText p{
+  font-size:25px;
+  text-align: justify;
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(15, 55, 16);
+  text-shadow: rgb(239, 88, 16) 0 -0.5px;
 }
