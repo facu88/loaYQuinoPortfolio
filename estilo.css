@@ -29,7 +29,6 @@ header {}
   display: flex;
   justify-content: flex-end;
   text-decoration: none;
-
 }
 
 .contactosHeader a {
@@ -98,7 +97,6 @@ h1 {
   justify-content: center;
   grid-gap: 1%;
   border-radius: 0px 0px 70px 70px
-
 }
 
 .navBar a {
@@ -129,14 +127,13 @@ h1 {
 }
 
 .cuerpo {
-
   /* display: flex; */
   justify-content: space-around;
   align-items: center;
   padding-bottom: 100px;
   background-image: url(img/fondo1.png);
-  background-repeat:round;
-  background-size:cover;
+  background-repeat: round;
+  background-size: cover;
 }
 
 .imagen {
@@ -153,7 +150,6 @@ h1 {
 }
 
 .imagen img:hover {
-
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   border: 2px solid rgb(15, 55, 16);
@@ -161,49 +157,44 @@ h1 {
   transition-duration: 0.5s;
 }
 
-.hello{
+.hello {}
 
-}
-
-.hello h3{
+.hello h3 {
   font-family: 'Bo';
   font-size: 50px;
   text-align: center;
   -webkit-text-stroke: 2px rgb(239, 88, 16);
- color: transparent;
+  color: transparent;
 }
 
-.helloText{
-font-family: 'Josefin Sans', sans-serif;
-font-size: 23px;
-text-align: left;
-color: rgb(15, 55, 16);
-text-shadow: rgb(239, 88, 16) 0 -0.5px;
+.helloText {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 23px;
+  text-align: left;
+  color: rgb(15, 55, 16);
+  text-shadow: rgb(239, 88, 16) 0 -0.5px;
 }
 
-
-.bio  {
+.bio {
   background-image: url(img/fondo.png);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   scroll-margin-top: 45px
-
-
 }
+
 .LoaBio {
   display: flex;
   text-align: center;
   align-items: center;
   flex-direction: row-reverse;
   padding-bottom: 100px;
-
 }
 
 .LoaImg img {
   margin-top: 5%;
   width: 500px;
-  border-radius:5% 100% 100% 10% / 11% 51% 65% 11%  ;
-/* border-radius: 5% 100% 100% 10% / 11% 100% 29% 11%  ; */
+  border-radius: 5% 100% 100% 10% / 11% 51% 65% 11%;
+  /* border-radius: 5% 100% 100% 10% / 11% 100% 29% 11%  ; */
   box-shadow: 9px 9px 0px 0px rgb(15, 55, 16);
   border: 3px solid rgb(239, 88, 16);
   transition-duration: 0.8s;
@@ -214,20 +205,21 @@ text-shadow: rgb(239, 88, 16) 0 -0.5px;
   box-shadow: 12px 12px 0px 0px rgb(239, 88, 16);
 }
 
-.LoaText{
-padding: 2%
+.LoaText {
+  padding: 2%
 }
-.LoaText h3{
+
+.LoaText h3 {
   font-family: 'Bo';
-  text-align:justify;
+  text-align: justify;
   font-size: 50px;
   -webkit-text-stroke: 2px rgb(239, 88, 16);
   color: transparent;
-
 }
-.LoaText p{
-  text-align:left;
-  font-size:20px;
+
+.LoaText p {
+  text-align: left;
+  font-size: 20px;
   font-family: 'Josefin Sans', sans-serif;
   color: rgb(15, 55, 16);
   text-shadow: rgb(239, 88, 16) 0 -0.5px;
@@ -238,16 +230,13 @@ padding: 2%
   text-align: center;
   align-items: center;
   flex-direction: row;
-
   padding-bottom: 100px;
 }
 
 .quinoImg img {
-
   margin-top: 5%;
   width: 500px;
-  border-radius:86% 9% 8% 100% / 68% 12% 22% 49%   ;
-
+  border-radius: 86% 9% 8% 100% / 68% 12% 22% 49%;
   box-shadow: 9px 9px 0px 0px rgb(15, 55, 16);
   border: 3px solid rgb(239, 88, 16);
   transition-duration: 0.8s;
@@ -258,30 +247,35 @@ padding: 2%
   box-shadow: 12px 12px 0px 0px rgb(239, 88, 16);
 }
 
-.quinoText{
-padding: 2%;
+.quinoText {
+  padding: 2%;
 }
-.quinoText h3{
+
+.quinoText h3 {
   font-family: 'Bo';
   text-align: justify;
   font-size: 60px;
   -webkit-text-stroke: 2px rgb(239, 88, 16);
   color: transparent;
-
 }
-.quinoText p{
-  font-size:25px;
+
+.quinoText p {
+  font-size: 25px;
   text-align: justify;
   font-family: 'Josefin Sans', sans-serif;
   color: rgb(15, 55, 16);
   text-shadow: rgb(239, 88, 16) 0 -0.5px;
 }
 
-.repertorio{
-  display: flex;
-  align-items: center;
-
+.Repertorio {
+  /* display: flex;
+  align-items: center; */
+  background-image: url(img/fondo2.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  scroll-margin-top: 45px;
 }
+
 .RepertorioTitulo {
   justify-content: center;
   font-family: 'Bo';
@@ -289,17 +283,25 @@ padding: 2%;
   font-size: 60px;
   -webkit-text-stroke: 2px rgb(239, 88, 16);
   color: transparent;
-  
 }
-.video{
+
+.video {
   display: flex;
   align-items: center;
   flex-direction: column;
-
+  width:100%;
+  height: 100%;
 }
-.video p {font-size:25px;
-text-align: justify;
+.video iframe{
+  /* width: 1.5rem;
+  height: 100%; */
+}
+.video p {
+  font-size: 25px;
+  text-align: justify;
   font-family: 'Josefin Sans', sans-serif;
   color: rgb(15, 55, 16);
   text-shadow: rgb(239, 88, 16) 0 -0.5px;
+  padding-left: 15%;
+  padding-right: 15%;
 }
