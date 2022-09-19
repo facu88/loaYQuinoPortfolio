@@ -29,6 +29,7 @@ header {}
   display: flex;
   justify-content: flex-end;
   text-decoration: none;
+
 }
 
 .contactosHeader a {
@@ -97,6 +98,7 @@ h1 {
   justify-content: center;
   grid-gap: 1%;
   border-radius: 0px 0px 70px 70px
+
 }
 
 .navBar a {
@@ -131,8 +133,10 @@ h1 {
   /* display: flex; */
   justify-content: space-around;
   align-items: center;
-  border-bottom: 2px solid rgb(15, 55, 16);
-  padding-bottom: 100px
+  padding-bottom: 100px;
+  background-image: url(img/fondo1.png);
+  background-repeat:round;
+  background-size:cover;
 }
 
 .imagen {
@@ -157,46 +161,32 @@ h1 {
   transition-duration: 0.5s;
 }
 
-.pad {
-  /* position: relative; */
-  padding: 5%;
-  /* padding-right: 5em; */
-  display: flex;
-  justify-content: center;
-  z-index: -1;
+.hello{
 
 }
 
-.card {
-  background-color: #f0cbb9;
-  box-sizing: border-box;
-  border: 1px solid #000;
-  margin-bottom: 3em;
-  transition-duration: 0.5s;
-
-    box-shadow: 9px 9px 0px 0px rgb(239, 88, 16);
-    border-color: rgb(239, 88, 16);
-
+.hello h3{
+  font-family: 'Bo';
+  font-size: 50px;
+  text-align: center;
+  -webkit-text-stroke: 2px rgb(239, 88, 16);
+ color: transparent;
 }
 
-.card-header {
-  font-family: 'Josefin Sans', sans-serif;
-  color: rgb(15, 55, 16);
-  text-shadow: rgb(239, 88, 16) 0 -1px;
-  ;
-  padding-bottom: 0px;
-}
-.card-header{
-  box-shadow: none
+.helloText{
+font-family: 'Josefin Sans', sans-serif;
+font-size: 23px;
+text-align: left;
+color: rgb(15, 55, 16);
+text-shadow: rgb(239, 88, 16) 0 -0.5px;
 }
 
-.color-2 :hover {
-  box-shadow: 12px 12px 0px 0px rgb(15, 55, 16);
-}
+
 .bio  {
   background-image: url(img/fondo.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
+  scroll-margin-top: 45px
 
 
 }
@@ -206,6 +196,7 @@ h1 {
   align-items: center;
   flex-direction: row-reverse;
   padding-bottom: 100px;
+
 }
 
 .LoaImg img {
@@ -247,7 +238,7 @@ padding: 2%
   text-align: center;
   align-items: center;
   flex-direction: row;
-  border-bottom: 2px solid rgb(15, 55, 16);
+
   padding-bottom: 100px;
 }
 
@@ -281,6 +272,33 @@ padding: 2%;
 .quinoText p{
   font-size:25px;
   text-align: justify;
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(15, 55, 16);
+  text-shadow: rgb(239, 88, 16) 0 -0.5px;
+}
+
+.repertorio{
+  display: flex;
+  align-items: center;
+
+}
+.RepertorioTitulo {
+  justify-content: center;
+  font-family: 'Bo';
+  text-align: center;
+  font-size: 60px;
+  -webkit-text-stroke: 2px rgb(239, 88, 16);
+  color: transparent;
+  
+}
+.video{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.video p {font-size:25px;
+text-align: justify;
   font-family: 'Josefin Sans', sans-serif;
   color: rgb(15, 55, 16);
   text-shadow: rgb(239, 88, 16) 0 -0.5px;
